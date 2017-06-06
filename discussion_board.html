@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Discussion Board</title>
+     <!-- font format -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel = "stylesheet">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+
+     <!-- CSS -->
+     <link href="discussion_board.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+     <header>
+          <nav class="navbar">
+               <div class="navbar-search"><i class="fa fa-user-circle" aria-hidden="true"></i></div>
+                  <ul class="navlist">
+                    <i class="fa fa-home" aria-hidden="true"></i><li class="navitem navlink active"><a href="#">Welcome</a></li>
+                    <li class="navitem navlink"><a href="#">Topic</a></li>
+                    <li class="navitem navlink"><a href="#">File</a></li>
+                  </ul>
+          </nav>
+     </header>
+
+     <main>
+
+          <h2>Title</h2>
+          <p class="Title-description">
+               Title description goes here.
+          </p>
+          <nav class = "User">
+               <li><div class="User_photo"><i class="fa fa-user-circle" aria-hidden="true"></i></div></li>
+               <li class="User_info">User 1</a></li>
+               <p class = "User_comment">
+                    Comment.
+               </p>
+          </nav>
+          <nav class = "User">
+               <li><div class="User_photo"><i class="fa fa-user-circle" aria-hidden="true"></i></div></li>
+               <li class="User_info">User 2</a></li>
+               <p class = "User_comment">
+                    Comment.
+               </p>
+          </nav>
+     </main>
+
+     <button type="button" id="create-discussion-button"><i class="fa fa-bullhorn"></i></button>
+
+
+     <div id="modal-backdrop" class="hidden"></div>
+     <div id="create-discussion-modal" class="hidden">
+          <div class="modal-dialog">
+
+ <div class="modal-header">
+   <h3>Create a new discussion board</h3>
+   <button type="button" class="modal-close-button">&times;</button>
+ </div>
+
+ <div class="modal-body">
+   <div class="discussion-input-element">
+      <label for="discussion-text-input">User Name</label>
+      <textarea id="discussion-text-input"></textarea>
+   </div>
+   <div class="discussion-input-element">
+      <label for="discussion-attribution-input">Content</label>
+      <input type="text" id="discussion-attribution-input">
+   </div>
+ </div>
+
+ <div class="modal-footer">
+   <button type="button" class="modal-cancel-button">Cancel</button>
+   <button type="button" class="modal-accept-button">Create discussion</button>
+ </div>
+
+</div>
+</div>
+
+
+
+</body>
+
+
+</html>

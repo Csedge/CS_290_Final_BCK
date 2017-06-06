@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+     <meta charset="UTF-8">
+     <title>Topic</title>
+     <!-- font format -->
+     <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700" rel = "stylesheet">
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" media="screen">
+
+     <!-- CSS -->
+     <link href="topic.css" rel="stylesheet" media="screen">
+
+</head>
+
+<body>
+     <header>
+          <!--左侧导入栏-->
+          <nav class="navbar">
+                              <div class="navbar-search"><i class="fa fa-user-circle" aria-hidden="true"></i><div>
+               <ul class="navlist">
+                    <i class="fa fa-home" aria-hidden="true"></i><li class="navitem navlink active"><a href="#">Welcome</a></li>
+                    <li class="navitem navlink"><a href="#">Topic</a></li>
+                    <li class="navitem navlink"><a href="#">File</a></li>
+               </ul>
+                </nav>
+     </header>
+                <main class="topic-container">
+
+                   <article class="topic">
+                     <div class="topic-content">
+
+                       <p class="topic-text">
+                         <a href="#">Announcement 1</a>
+                       </p>
+                       <p class="topic-date">
+                         <a>dd/mm/yy</a>
+                       </p>
+                     </div>
+                   </article>
+
+                   <article class="topic">
+                     <div class="topic-content">
+                       <p class="topic-text">
+                         <a href="#">Announcement 2</a>
+                       </p>
+                       <p class="topic-date">
+                         <a>dd/mm/yy</a>
+                       </p>
+                     </div>
+                   </article>
+              </main>
+
+        <button type="button" id="create-topic-button"><i class="fa fa-bullhorn"></i></button>
+
+
+        <div id="modal-backdrop" class="hidden"></div>
+        <div id="create-topic-modal" class="hidden">
+             <div class="modal-dialog">
+
+     <div class="modal-header">
+       <h3>Create a new Topic</h3>
+       <button type="button" class="modal-close-button">&times;</button>
+     </div>
+
+     <div class="modal-body">
+       <div class="topic-input-element">
+         <label for="topic-text-input">Topic</label>
+         <textarea id="topic-text-input"></textarea>
+       </div>
+       <div class="topic-input-element">
+         <label for="topic-attribution-input">Content</label>
+         <input type="text" id="topic-attribution-input">
+       </div>
+     </div>
+
+     <div class="modal-footer">
+       <button type="button" class="modal-cancel-button">Cancel</button>
+       <button type="button" class="modal-accept-button">Create Topic</button>
+     </div>
+
+  </div>
+</div>
+
+</body>
+
+</html>
