@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <meta charset="UTF-8">
+     <title>Welcome</title>
+     <!-- font format -->
+
+
+     <!-- CSS -->
+     <link 	href="style.css" rel="stylesheet" media="screen">
+
+</head>
+<body>
+     <header>
+          <nav class="navbar">
+               <div class="navbar-search"><i class="fa fa-user-circle"></i><div>
+                  <ul class="navlist">
+				    <li class="headicon"><img src="images/mao.jpg" alt="some_text" style="width:90px;height:90px"></li>  <!-- 头像在登录后由用户上传，默认为mao -->
+                    <li class="navitem navlink active"><a href="#">Welcome</a></li>
+                    <li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn">Topic</a>
+					<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+					</div>
+					</li>
+                    <li class="navitem navlink"><a href="#">File</a></li>
+					<li class="navitem navlink"><a href="#">Log out</a></li>
+                    
+                  </ul>
+          </nav>
+     </header>
+
+     <main class="topic-container">
+
+        <article class="topic">
+          <div class="topic-content">
+            <p class="topic-text">
+              Announcement 1.
+            </p>
+            <p class="topic-date">
+              <a>dd/mm/yy</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="topic">
+          <div class="topic-content">
+            <p class="topic-text">
+              Announcement 2.
+            </p>
+            <p class="topic-date">
+              <a>dd/mm/yy</a>
+            </p>
+          </div>
+        </article>
+		
+		<button type="button" id="create-topic-button"><i class="fa fa-bullhorn"></i></button>
+
+
+        <div id="modal-backdrop" class="hidden"></div>
+        <div id="create-topic-modal" class="hidden">
+             <div class="modal-dialog">
+
+     <div class="modal-header">
+       <h3>Create a new Topic</h3>
+       <button type="button" class="modal-close-button">&times;</button>
+     </div>
+
+     <div class="modal-body">
+       <div class="topic-input-element">
+         <label for="topic-text-input">Topic</label>
+         <textarea id="topic-text-input"></textarea>
+       </div>
+       <div class="topic-input-element">
+         <label for="topic-attribution-input">Content</label>
+         <input type="text" id="topic-attribution-input">
+       </div>
+     </div>
+
+     <div class="modal-footer">
+       <button type="button" class="modal-cancel-button">Cancel</button>
+       <button type="button" class="modal-accept-button">Create Topic</button>
+     </div>
+
+  </div>
+</div>
+		
+		
+   </main>  
+</body>
+</html>

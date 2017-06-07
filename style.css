@@ -1,0 +1,81 @@
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	left:0;
+    top:0;
+	width: 180px;
+    background-color: #f1f1f1;
+	height: 100%;  /*导航占全屏高度 */
+	position: fixed;
+	
+}
+
+.navbar li a {
+    
+	display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+
+.navbar li {
+	
+    text-align: center;
+ 
+}
+	
+
+.navbar li a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.navbar .active {
+    background-color: #555;
+    color: white;
+}
+
+
+
+.navbar .dropdown-content {
+    
+	display: none;
+    position: absolute;  /* 悬浮在topic 上时， 子目录不会影响主目录 */
+	margin-left:180px;
+	margin-top:-100px;
+    background-color: #555;
+    width: 200px;
+	height:300px;
+    
+    
+}
+
+.navbar .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+}
+
+.navbar .dropdown-content a:hover {background-color: #f1f1f1}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.topic-container{
+	
+	
+	margin-left:200px;
+	
+	
+	
+	
+}
+
